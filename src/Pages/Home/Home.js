@@ -1,9 +1,12 @@
 import React from 'react';
+import Header from '../Components/Header/Header';
+import Nav from '../Components/Nav/Nav';
 
 const Home = () => {
     return (
         <div>
-            <h1>Hello</h1>
+            <Nav></Nav>
+            <Header></Header>
         </div>
     );
 };
