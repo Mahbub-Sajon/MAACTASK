@@ -5,7 +5,11 @@ module.exports = {
     extend: {},
   },
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'manrope': 'Manrope',
+      }
+    },
   },
   daisyui: {
     themes: [
