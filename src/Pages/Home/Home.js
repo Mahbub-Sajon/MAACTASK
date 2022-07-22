@@ -4,6 +4,7 @@ import Nav from '../Components/Nav/Nav';
 import bg from '../../img/bg-img.png'
 import Tab from '../Components/Tab/Tab';
 import Feature from '../Components/Feature/Feature';
+import About from '../Components/About/About';
 
 const Home = () => {
     return (
@@ -17,6 +18,12 @@ const Home = () => {
         </div>
         <Tab></Tab>
         <Feature></Feature>
+
+       <div style={{
+            backgroundImage: `url(${ bg })`,
+        }}>
+       <About ></About>
+       </div>
        </div>
     );
 };

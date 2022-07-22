@@ -10,8 +10,7 @@ const Feature = () => {
             <h2 className='text-center text-black font-manrope text-2xl font-bold mb-64'>Make more out of your data</h2>
 
 
-            <div className='bg-primary w-72 h-64 mx-auto rounded-full'>
-                   
+            <div className='bg-primary w-72 h-64 mx-auto rounded-full'>    
                    </div>
 
 
