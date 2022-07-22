@@ -3,6 +3,7 @@ import Header from '../Components/Header/Header';
 import Nav from '../Components/Nav/Nav';
 import bg from '../../img/bg-img.png'
 import Tab from '../Components/Tab/Tab';
+import Feature from '../Components/Feature/Feature';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
            
         </div>
         <Tab></Tab>
+        <Feature></Feature>
        </div>
     );
 };
