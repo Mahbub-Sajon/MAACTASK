@@ -7,10 +7,12 @@ import About from '../Components/About/About';
 import Faq from '../Components/Faq/Faq';
 import bg2 from '../../img/bg2.png'
 import Teams from '../Components/Teams/Teams';
+import Nav from '../Components/Nav/Nav';
 
 const Home = () => {
     return (
        <div>
+        <Nav></Nav>
          <div style={{
             backgroundImage: `url(${ bg })`
         }}>
