@@ -24,13 +24,12 @@ const RegionList = () => {
                 </div>
                 <label>
                     <select onChange={event => setData(parseInt(event.target.value))} className="bg-base-100 select rounded-full w-72 border-2 border-[#E5E6E6] outline-none mx-3" style={{ outline: 'none', padding: '8px', color: '#4E4E4E', fontWeight: '400' }}>
-                        <option>5</option>
+                      
                         <option>10</option>
-                        <option>20</option>
                         <option>50</option>
-                        <option>80</option>
                         <option>100</option>
-                        <option>All</option>
+                       
+                       
                     </select>
                 </label>
             </div>

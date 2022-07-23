@@ -7,7 +7,7 @@ const CreateRegion = () => {
             .then(res => res.json())
             .then(data => {
                 if (data?.status === 'success') {
-                    alert.success('Region added Successfully')
+                    alert.success('Region added!!!')
                     reset()
                 }
             })
@@ -18,10 +18,10 @@ const CreateRegion = () => {
                 <form onSubmit={handleSubmit(onSubmit)} className="p-12">
                     <div>
                         <label className="label">
-                            <span className="label-text">Region</span>
+                            <span className="label-text">Add Region</span>
                         </label>
                         <input type="text" {...register("name", { required: true })} placeholder="Type Region" className="outline-none border-[#CED4DA] border-2 rounded-xl p-3 w-full" />
-                        {errors.name?.type === 'required' && <small className='block text-red-600'>Region Name is required</small>}
+                        {errors.name?.type === 'required' && <small className='block text-red-600'>Fill the box</small>}
                     </div>
                     <div className="flex justify-end">
                         <input type="submit" className="bg-neutral text-white mt-14 py-3 px-5 rounded-xl cursor-pointer" value="Add Region" />

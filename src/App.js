@@ -5,6 +5,7 @@ import Login from './Pages/Login/Login';
 import SignIn from './Pages/SignIn/SignIn';
 import Footer from './Pages/Components/Footer/Footer';
 import RegionList from './Pages/Dashboard/RegionList/RegionList';
+import CreateRegion from './Pages/Dashboard/CreateRegion/CreateRegion';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Route path="/signin" element={<SignIn></SignIn>}></Route>
 
     <Route path='/region' element={<RegionList></RegionList>}></Route>
+    <Route path='/createregion' element={<CreateRegion></CreateRegion>}></Route>
 
 
      </Routes>
