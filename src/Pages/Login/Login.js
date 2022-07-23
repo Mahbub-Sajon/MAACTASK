@@ -1,9 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Nav from '../Components/Nav/Nav';
 import bg from '../../img/bg-img.png'
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init'
 
 const Login = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const [signInWithEmailAndPassword,
+      user,
+      loading,
+      error] = useSignInWithEmailAndPassword(auth);
+
+      const navigate = useNavigate();
+      const location = useLocation();
+      const from = location.state?.from?.pathname || '/';
+
+      const handleUserSignIn = async event => {
+        event.preventDefault();
+        
+    }
+  
+
     return (
         <div>
             <div style={{
@@ -24,7 +44,8 @@ const Login = () => {
         <p>Please login to your account</p>
 
         
-        <div className="form-control">
+      <form onSubmit={handleUserSignIn}>
+      <div className="form-control">
           <label className="label">
            
           </label>
@@ -38,16 +59,25 @@ const Login = () => {
         
           </label>
           <input type="password" placeholder="Password" className="input input-bordered" required/>
-          <label className="label">
+          
+        </div>
+
+
+        <label className="label">
             <p className='font-manrope'>
             Don't have an account?  <Link to="/signin" className="text-sm text-blue-700 label-text-alt link link-hover">Sign Up</Link>
-            </p>
-           
+            </p> 
           </label>
-        </div>
+
+
         <div className="form-control mt-6">
-          <button className=" text-white font-manrope py-2 rounded-lg btn-primary">Sign in</button>
+         
+
+          <input className='text-white font-manrope py-2 rounded-lg btn-primary cursor-pointer' type="submit" value="Sign in" />
         </div>
+      </form>
+
+
       </div>
     </div>
   </div>
