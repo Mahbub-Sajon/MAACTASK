@@ -20,11 +20,9 @@ const Nav = () => {
               user? 
               <div> 
                 <button onClick={handleSignOut} className='mr-4 w-20 h-11 rounded-md text-white bg-primary'>Log Out</button>
-              <button>more</button>
-              <button>more</button>
-              <button>more</button>
-              <button>more</button>
-              <button>more</button>
+             <Link to='/region'> <button className='mr-4 w-20 h-11 rounded-md text-white bg-primary'>Region</button></Link>
+              <button className='mr-4 w-20 h-11 rounded-md text-white bg-primary'>Area</button>
+             
               </div>
               :
               <Link to="/login"> <button className='mr-4 w-20 h-11 rounded-md text-white bg-primary'>Login</button></Link>
