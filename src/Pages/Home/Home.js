@@ -1,12 +1,12 @@
 import React from 'react';
 import Header from '../Components/Header/Header';
-import Nav from '../Components/Nav/Nav';
 import bg from '../../img/bg-img.png'
 import Tab from '../Components/Tab/Tab';
 import Feature from '../Components/Feature/Feature';
 import About from '../Components/About/About';
 import Faq from '../Components/Faq/Faq';
 import bg2 from '../../img/bg2.png'
+import Teams from '../Components/Teams/Teams';
 
 const Home = () => {
     return (
@@ -14,7 +14,7 @@ const Home = () => {
          <div style={{
             backgroundImage: `url(${ bg })`
         }}>
-            <Nav></Nav>
+           
             <Header></Header>
            
         </div>
@@ -34,6 +34,8 @@ const Home = () => {
         }}>
       <Faq></Faq>
       </div>
+      <Teams></Teams>
+    
        </div>
     );
 };
